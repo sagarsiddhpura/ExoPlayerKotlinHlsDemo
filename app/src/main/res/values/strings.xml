@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ExoPlayerKotlinDemo</string>
+    <string name="skip_ad_dummy_text">Playing Video in 8...</string>
+    <string name="playing_video">"Playing video in %1$s"</string>
+    <string name="skip_ad">Skip Ad</string>
+    <string name="playing_ad">Playing Ad...</string>
 </resources>

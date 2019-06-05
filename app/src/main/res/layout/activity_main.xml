@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,6 +15,41 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:controller_layout_id="@layout/exo_playback_control_view"
-            app:resize_mode="fit"/>
+            app:resize_mode="fit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-</LinearLayout>
+    </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent_black"
+            android:id="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+                android:id="@+id/video_message_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="@string/skip_ad_dummy_text"
+                android:padding="@dimen/space_skip_ad"/>
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading_view"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:lottie_rawRes="@raw/loading_hourglass"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

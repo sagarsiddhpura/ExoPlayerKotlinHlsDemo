@@ -1,6 +1,4 @@
 # ExoPlayerKotlinHlsDemo
-![icon](https://github.com/Gwokhov/Deadline/blob/master/pic/ic.png)
-
 A simple Android app to showcase Exoplayer HLS playback built with Kotlin, Java, Android JetPack and Lottie
 
 ## Features:
@@ -9,7 +7,7 @@ A simple Android app to showcase Exoplayer HLS playback built with Kotlin, Java,
 - API type structure, call videoactivity with required data and it handles everything on its own
 - Loading animation when stream is loading/buffering
 - Handles device orientation changes without video restart
-- Handles fullscreen, no not sleep, keep screen on, brightness for video
+- Handles fullscreen, do not sleep, keep screen on and brightness when video is started
 
 
 ## Preview:
